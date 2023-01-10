@@ -1,0 +1,2114 @@
+{
+    "C": {
+      "common": {
+        "C": {
+          "order": 1,
+          "chordName": "C",
+          "chordDiagram": {
+            "frets": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "fingers": [
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        },
+        "C7": {
+          "order": 2,
+          "chordName": "C7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "fingers": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "Cm": {
+          "order": 3,
+          "chordName": "Cm",
+          "chordDiagram": {
+            "frets": [
+              0,
+              3,
+              3,
+              3
+            ],
+            "fingers": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        "Cm7": {
+          "order": 4,
+          "chordName": "Cm7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              3
+            ],
+            "capo": true
+          }
+        },
+        "Cdim": {
+          "order": 5,
+          "chordName": "Cdim",
+          "chordDiagram": {
+            "frets": [
+              5,
+              3,
+              2,
+              3
+            ],
+            "fingers": [
+              4,
+              2,
+              1,
+              3
+            ]
+          }
+        },
+        "Caug": {
+          "order": 6,
+          "chordName": "Caug",
+          "chordDiagram": {
+            "frets": [
+              1,
+              0,
+              0,
+              3
+            ],
+            "fingers": [
+              1,
+              0,
+              0,
+              4
+            ]
+          }
+        },
+        "C6": {
+          "order": 7,
+          "chordName": "C6",
+          "chordDiagram": {
+            "frets": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "fingers": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "Cmaj7": {
+          "order": 8,
+          "chordName": "Cmaj7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "fingers": [
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        },
+        "C9": {
+          "order": 9,
+          "chordName": "C9",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              0,
+              1
+            ],
+            "fingers": [
+              0,
+              2,
+              0,
+              1
+            ]
+          }
+        }
+      }
+    },
+    "Db": {
+      "common": {
+        "Db": {
+          "order": 1,
+          "chordName": "Db",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              1,
+              4
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              4
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Db7": {
+          "order": 2,
+          "chordName": "Db7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Dbm": {
+          "order": 3,
+          "chordName": "Dbm",
+          "chordDiagram": {
+            "frets": [
+              1,
+              4,
+              4,
+              4
+            ],
+            "fingers": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        "Dbm7": {
+          "order": 4,
+          "chordName": "Dbm7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              0,
+              2
+            ],
+            "fingers": [
+              1,
+              2,
+              0,
+              3
+            ]
+          }
+        },
+        "Dbdim": {
+          "order": 5,
+          "chordName": "Dbdim",
+          "chordDiagram": {
+            "frets": [
+              6,
+              4,
+              3,
+              4
+            ],
+            "fingers": [
+              4,
+              2,
+              1,
+              3
+            ]
+          }
+        },
+        "Dbaug": {
+          "order": 6,
+          "chordName": "Dbaug",
+          "chordDiagram": {
+            "frets": [
+              2,
+              1,
+              1,
+              0
+            ],
+            "fingers": [
+              3,
+              1,
+              2,
+              0
+            ]
+          }
+        },
+        "Db6": {
+          "order": 7,
+          "chordName": "Db6",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Dbmaj7": {
+          "order": 8,
+          "chordName": "Dbmaj7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              1,
+              3
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              3
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Db9": {
+          "order": 9,
+          "chordName": "Db9",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              1,
+              2
+            ],
+            "fingers": [
+              1,
+              3,
+              1,
+              2
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        }
+      }
+    },
+    "D": {
+      "common": {
+        "D": {
+          "order": 1,
+          "chordName": "D",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              2,
+              0
+            ],
+            "fingers": [
+              1,
+              2,
+              3,
+              0
+            ]
+          }
+        },
+        "D7": {
+          "order": 2,
+          "chordName": "D7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              2,
+              3
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "Dm": {
+          "order": 3,
+          "chordName": "Dm",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              1,
+              0
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              0
+            ]
+          }
+        },
+        "Dm7": {
+          "order": 4,
+          "chordName": "Dm7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              1,
+              3
+            ],
+            "fingers": [
+              2,
+              2,
+              1,
+              3
+            ],
+            "barres": [
+              2
+            ]
+          }
+        },
+        "Ddim": {
+          "order": 5,
+          "chordName": "Ddim",
+          "chordDiagram": {
+            "frets": [
+              7,
+              5,
+              4,
+              5
+            ],
+            "fingers": [
+              4,
+              2,
+              1,
+              3
+            ]
+          }
+        },
+        "Daug": {
+          "order": 6,
+          "chordName": "Daug",
+          "chordDiagram": {
+            "frets": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "fingers": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "barres": [
+              2
+            ]
+          }
+        },
+        "D6": {
+          "order": 7,
+          "chordName": "D6",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "Dmaj7": {
+          "order": 8,
+          "chordName": "Dmaj7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              3
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "D9": {
+          "order": 9,
+          "chordName": "D9",
+          "chordDiagram": {
+            "frets": [
+              2,
+              4,
+              2,
+              3
+            ],
+            "fingers": [
+              1,
+              3,
+              1,
+              2
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        }
+      }
+    },
+    "Eb": {
+      "common": {
+        "Eb": {
+          "order": 1,
+          "chordName": "Eb",
+          "chordDiagram": {
+            "frets": [
+              0,
+              3,
+              3,
+              1
+            ],
+            "fingers": [
+              0,
+              3,
+              4,
+              1
+            ]
+          }
+        },
+        "Eb7": {
+          "order": 2,
+          "chordName": "Eb7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              3,
+              4
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "barres": [
+              3
+            ],
+            "capo": true
+          }
+        },
+        "Ebm": {
+          "order": 3,
+          "chordName": "Ebm",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              2,
+              1
+            ],
+            "fingers": [
+              3,
+              4,
+              2,
+              1
+            ]
+          }
+        },
+        "Ebm7": {
+          "order": 4,
+          "chordName": "Ebm7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              2,
+              4
+            ],
+            "fingers": [
+              2,
+              2,
+              1,
+              3
+            ],
+            "barres": [
+              3
+            ]
+          }
+        },
+        "Ebdim": {
+          "order": 5,
+          "chordName": "Ebdim",
+          "chordDiagram": {
+            "frets": [
+              2,
+              3,
+              2,
+              0
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              0
+            ]
+          }
+        },
+        "Ebaug": {
+          "order": 6,
+          "chordName": "Ebaug",
+          "chordDiagram": {
+            "frets": [
+              0,
+              3,
+              3,
+              2
+            ],
+            "fingers": [
+              0,
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        "Eb6": {
+          "order": 7,
+          "chordName": "Eb6",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              3
+            ],
+            "capo": true
+          }
+        },
+        "Ebmaj7": {
+          "order": 8,
+          "chordName": "Ebmaj7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              3,
+              5
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              3
+            ],
+            "barres": [
+              3
+            ],
+            "capo": true
+          }
+        },
+        "Eb9": {
+          "order": 9,
+          "chordName": "Eb9",
+          "chordDiagram": {
+            "frets": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "fingers": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        }
+      }
+    },
+    "E": {
+      "common": {
+        "E": {
+          "order": 1,
+          "chordName": "E",
+          "chordDiagram": {
+            "frets": [
+              1,
+              4,
+              0,
+              2
+            ],
+            "fingers": [
+              1,
+              4,
+              0,
+              2
+            ]
+          }
+        },
+        "E7": {
+          "order": 2,
+          "chordName": "E7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              2,
+              0,
+              2
+            ],
+            "fingers": [
+              1,
+              2,
+              0,
+              3
+            ]
+          }
+        },
+        "Em": {
+          "order": 3,
+          "chordName": "Em",
+          "chordDiagram": {
+            "frets": [
+              0,
+              4,
+              3,
+              2
+            ],
+            "fingers": [
+              0,
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        "Em7": {
+          "order": 4,
+          "chordName": "Em7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              0,
+              2
+            ],
+            "fingers": [
+              0,
+              1,
+              0,
+              2
+            ]
+          }
+        },
+        "Edim": {
+          "order": 5,
+          "chordName": "Edim",
+          "chordDiagram": {
+            "frets": [
+              3,
+              4,
+              3,
+              1
+            ],
+            "fingers": [
+              2,
+              4,
+              3,
+              1
+            ]
+          }
+        },
+        "Eaug": {
+          "order": 6,
+          "chordName": "Eaug",
+          "chordDiagram": {
+            "frets": [
+              1,
+              0,
+              0,
+              3
+            ],
+            "fingers": [
+              1,
+              0,
+              0,
+              3
+            ]
+          }
+        },
+        "E6": {
+          "order": 7,
+          "chordName": "E6",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              0,
+              2
+            ],
+            "fingers": [
+              1,
+              2,
+              0,
+              3
+            ]
+          }
+        },
+        "Emaj7": {
+          "order": 8,
+          "chordName": "Emaj7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              0,
+              2
+            ],
+            "fingers": [
+              1,
+              3,
+              0,
+              2
+            ]
+          }
+        },
+        "E9": {
+          "order": 9,
+          "chordName": "E9",
+          "chordDiagram": {
+            "frets": [
+              1,
+              2,
+              2,
+              2
+            ],
+            "fingers": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "F": {
+      "common": {
+        "F": {
+          "order": 1,
+          "chordName": "F",
+          "chordDiagram": {
+            "frets": [
+              2,
+              0,
+              1,
+              0
+            ],
+            "fingers": [
+              2,
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        "F7": {
+          "order": 2,
+          "chordName": "F7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              3,
+              1,
+              3
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              4
+            ]
+          }
+        },
+        "Fm": {
+          "order": 3,
+          "chordName": "Fm",
+          "chordDiagram": {
+            "frets": [
+              1,
+              0,
+              1,
+              3
+            ],
+            "fingers": [
+              1,
+              0,
+              2,
+              4
+            ]
+          }
+        },
+        "Fm7": {
+          "order": 4,
+          "chordName": "Fm7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              1,
+              3
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              4
+            ]
+          }
+        },
+        "Fdim": {
+          "order": 5,
+          "chordName": "Fdim",
+          "chordDiagram": {
+            "frets": [
+              4,
+              5,
+              4,
+              2
+            ],
+            "fingers": [
+              2,
+              4,
+              3,
+              1
+            ]
+          }
+        },
+        "Faug": {
+          "order": 6,
+          "chordName": "Faug",
+          "chordDiagram": {
+            "frets": [
+              2,
+              1,
+              1,
+              0
+            ],
+            "fingers": [
+              3,
+              1,
+              2,
+              0
+            ]
+          }
+        },
+        "F6": {
+          "order": 7,
+          "chordName": "F6",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              1,
+              3
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              4
+            ]
+          }
+        },
+        "Fmaj7": {
+          "order": 8,
+          "chordName": "Fmaj7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              4,
+              1,
+              3
+            ],
+            "fingers": [
+              2,
+              4,
+              1,
+              3
+            ]
+          }
+        },
+        "F9": {
+          "order": 9,
+          "chordName": "F9",
+          "chordDiagram": {
+            "frets": [
+              2,
+              3,
+              3,
+              3
+            ],
+            "fingers": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "Gb": {
+      "common": {
+        "Gb": {
+          "order": 1,
+          "chordName": "Gb",
+          "chordDiagram": {
+            "frets": [
+              3,
+              1,
+              2,
+              1
+            ],
+            "fingers": [
+              3,
+              1,
+              2,
+              1
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Gb7": {
+          "order": 2,
+          "chordName": "Gb7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              4,
+              2,
+              4
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              4
+            ]
+          }
+        },
+        "Gbm": {
+          "order": 3,
+          "chordName": "Gbm",
+          "chordDiagram": {
+            "frets": [
+              2,
+              1,
+              2,
+              0
+            ],
+            "fingers": [
+              2,
+              1,
+              3,
+              0
+            ]
+          }
+        },
+        "Gbm7": {
+          "order": 4,
+          "chordName": "Gbm7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              4,
+              2,
+              4
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              4
+            ]
+          }
+        },
+        "Gbdim": {
+          "order": 5,
+          "chordName": "Gbdim",
+          "chordDiagram": {
+            "frets": [
+              2,
+              0,
+              2,
+              0
+            ],
+            "fingers": [
+              2,
+              0,
+              3,
+              0
+            ]
+          }
+        },
+        "Gbaug": {
+          "order": 6,
+          "chordName": "Gbaug",
+          "chordDiagram": {
+            "frets": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "fingers": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "barres": [
+              2
+            ]
+          }
+        },
+        "Gb6": {
+          "order": 7,
+          "chordName": "Gb6",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              2,
+              4
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              4
+            ]
+          }
+        },
+        "Gbmaj7": {
+          "order": 8,
+          "chordName": "Gbmaj7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              5,
+              2,
+              4
+            ],
+            "fingers": [
+              2,
+              4,
+              1,
+              3
+            ]
+          }
+        },
+        "Gb9": {
+          "order": 9,
+          "chordName": "Gb9",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "fingers": [
+              1,
+              2,
+              0,
+              3
+            ]
+          }
+        }
+      }
+    },
+    "G": {
+      "common": {
+        "G": {
+          "order": 1,
+          "chordName": "G",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              3,
+              2
+            ],
+            "fingers": [
+              0,
+              1,
+              3,
+              2
+            ]
+          }
+        },
+        "G7": {
+          "order": 2,
+          "chordName": "G7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              1,
+              2
+            ],
+            "fingers": [
+              0,
+              2,
+              1,
+              3
+            ]
+          }
+        },
+        "Gm": {
+          "order": 3,
+          "chordName": "Gm",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              3,
+              1
+            ],
+            "fingers": [
+              0,
+              2,
+              3,
+              1
+            ]
+          }
+        },
+        "Gm7": {
+          "order": 4,
+          "chordName": "Gm7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              1,
+              1
+            ],
+            "fingers": [
+              0,
+              2,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ]
+          }
+        },
+        "Gdim": {
+          "order": 5,
+          "chordName": "Gdim",
+          "chordDiagram": {
+            "frets": [
+              0,
+              1,
+              3,
+              1
+            ],
+            "fingers": [
+              0,
+              1,
+              3,
+              2
+            ]
+          }
+        },
+        "Gaug": {
+          "order": 6,
+          "chordName": "Gaug",
+          "chordDiagram": {
+            "frets": [
+              0,
+              3,
+              3,
+              2
+            ],
+            "fingers": [
+              0,
+              2,
+              3,
+              1
+            ]
+          }
+        },
+        "G6": {
+          "order": 7,
+          "chordName": "G6",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              0,
+              2
+            ],
+            "fingers": [
+              0,
+              1,
+              0,
+              2
+            ]
+          }
+        },
+        "Gmaj7": {
+          "order": 8,
+          "chordName": "Gmaj7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "fingers": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        "G9": {
+          "order": 9,
+          "chordName": "G9",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "Ab": {
+      "common": {
+        "Ab": {
+          "order": 1,
+          "chordName": "Ab",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              4,
+              3
+            ],
+            "fingers": [
+              1,
+              2,
+              4,
+              3
+            ]
+          }
+        },
+        "Ab7": {
+          "order": 2,
+          "chordName": "Ab7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              2,
+              3
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              4
+            ]
+          }
+        },
+        "Abm": {
+          "order": 3,
+          "chordName": "Abm",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "fingers": [
+              1,
+              3,
+              4,
+              2
+            ]
+          }
+        },
+        "Abm7": {
+          "order": 4,
+          "chordName": "Abm7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              2,
+              2
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              2
+            ],
+            "barres": [
+              2
+            ]
+          }
+        },
+        "Abdim": {
+          "order": 5,
+          "chordName": "Abdim",
+          "chordDiagram": {
+            "frets": [
+              1,
+              2,
+              4,
+              2
+            ],
+            "fingers": [
+              1,
+              2,
+              4,
+              3
+            ]
+          }
+        },
+        "Abaug": {
+          "order": 6,
+          "chordName": "Abaug",
+          "chordDiagram": {
+            "frets": [
+              1,
+              0,
+              0,
+              3
+            ],
+            "fingers": [
+              1,
+              0,
+              0,
+              3
+            ]
+          }
+        },
+        "Ab6": {
+          "order": 7,
+          "chordName": "Ab6",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              1,
+              3
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              4
+            ]
+          }
+        },
+        "Abmaj7": {
+          "order": 8,
+          "chordName": "Abmaj7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              3,
+              3
+            ],
+            "fingers": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        "Ab9": {
+          "order": 9,
+          "chordName": "Ab9",
+          "chordDiagram": {
+            "frets": [
+              3,
+              3,
+              2,
+              3
+            ],
+            "fingers": [
+              2,
+              3,
+              1,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "A": {
+      "common": {
+        "A": {
+          "order": 1,
+          "chordName": "A",
+          "chordDiagram": {
+            "frets": [
+              2,
+              1,
+              0,
+              0
+            ],
+            "fingers": [
+              2,
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        "A7": {
+          "order": 2,
+          "chordName": "A7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "fingers": [
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        "Am": {
+          "order": 3,
+          "chordName": "Am",
+          "chordDiagram": {
+            "frets": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "fingers": [
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "Am7": {
+          "order": 4,
+          "chordName": "Am7",
+          "chordDiagram": {
+            "frets": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "fingers": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "Adim": {
+          "order": 5,
+          "chordName": "Adim",
+          "chordDiagram": {
+            "frets": [
+              2,
+              3,
+              5,
+              3
+            ],
+            "fingers": [
+              1,
+              2,
+              4,
+              3
+            ]
+          }
+        },
+        "Aaug": {
+          "order": 6,
+          "chordName": "Aaug",
+          "chordDiagram": {
+            "frets": [
+              2,
+              1,
+              1,
+              0
+            ],
+            "fingers": [
+              3,
+              1,
+              2,
+              0
+            ]
+          }
+        },
+        "A6": {
+          "order": 7,
+          "chordName": "A6",
+          "chordDiagram": {
+            "frets": [
+              2,
+              4,
+              2,
+              4
+            ],
+            "fingers": [
+              1,
+              3,
+              2,
+              4
+            ]
+          }
+        },
+        "Amaj7": {
+          "order": 8,
+          "chordName": "Amaj7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "fingers": [
+              1,
+              2,
+              0,
+              0
+            ]
+          }
+        },
+        "A9": {
+          "order": 9,
+          "chordName": "A9",
+          "chordDiagram": {
+            "frets": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "fingers": [
+              0,
+              1,
+              0,
+              2
+            ]
+          }
+        }
+      }
+    },
+    "Bb": {
+      "common": {
+        "Bb": {
+          "order": 1,
+          "chordName": "Bb",
+          "chordDiagram": {
+            "frets": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "fingers": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Bb7": {
+          "order": 2,
+          "chordName": "Bb7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              2,
+              1,
+              1
+            ],
+            "fingers": [
+              1,
+              2,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Bbm": {
+          "order": 3,
+          "chordName": "Bbm",
+          "chordDiagram": {
+            "frets": [
+              3,
+              1,
+              1,
+              1
+            ],
+            "fingers": [
+              3,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Bbm7": {
+          "order": 4,
+          "chordName": "Bbm7",
+          "chordDiagram": {
+            "frets": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        },
+        "Bbdim": {
+          "order": 5,
+          "chordName": "Bbdim",
+          "chordDiagram": {
+            "frets": [
+              3,
+              1,
+              0,
+              1
+            ],
+            "fingers": [
+              3,
+              1,
+              0,
+              2
+            ]
+          }
+        },
+        "Bbaug": {
+          "order": 6,
+          "chordName": "Bbaug",
+          "chordDiagram": {
+            "frets": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "fingers": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "barres": [
+              2
+            ]
+          }
+        },
+        "Bb6": {
+          "order": 7,
+          "chordName": "Bb6",
+          "chordDiagram": {
+            "frets": [
+              0,
+              2,
+              1,
+              1
+            ],
+            "fingers": [
+              0,
+              2,
+              1,
+              1
+            ],
+            "barres": [
+              1
+            ]
+          }
+        },
+        "Bbmaj7": {
+          "order": 8,
+          "chordName": "Bbmaj7",
+          "chordDiagram": {
+            "frets": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "fingers": [
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        "Bb9": {
+          "order": 9,
+          "chordName": "Bb9",
+          "chordDiagram": {
+            "frets": [
+              1,
+              2,
+              1,
+              3
+            ],
+            "fingers": [
+              1,
+              2,
+              1,
+              3
+            ],
+            "barres": [
+              1
+            ],
+            "capo": true
+          }
+        }
+      }
+    },
+    "B": {
+      "common": {
+        "B": {
+          "order": 1,
+          "chordName": "B",
+          "chordDiagram": {
+            "frets": [
+              4,
+              3,
+              2,
+              2
+            ],
+            "fingers": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "B7": {
+          "order": 2,
+          "chordName": "B7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              3,
+              2,
+              2
+            ],
+            "fingers": [
+              1,
+              2,
+              1,
+              1
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "Bm": {
+          "order": 3,
+          "chordName": "Bm",
+          "chordDiagram": {
+            "frets": [
+              4,
+              2,
+              2,
+              2
+            ],
+            "fingers": [
+              3,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "Bm7": {
+          "order": 4,
+          "chordName": "Bm7",
+          "chordDiagram": {
+            "frets": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "fingers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        },
+        "Bdim": {
+          "order": 5,
+          "chordName": "Bdim",
+          "chordDiagram": {
+            "frets": [
+              4,
+              2,
+              1,
+              2
+            ],
+            "fingers": [
+              4,
+              2,
+              1,
+              3
+            ]
+          }
+        },
+        "Baug": {
+          "order": 6,
+          "chordName": "Baug",
+          "chordDiagram": {
+            "frets": [
+              0,
+              3,
+              3,
+              2
+            ],
+            "fingers": [
+              0,
+              2,
+              3,
+              1
+            ]
+          }
+        },
+        "B6": {
+          "order": 7,
+          "chordName": "B6",
+          "chordDiagram": {
+            "frets": [
+              1,
+              3,
+              2,
+              2
+            ],
+            "fingers": [
+              1,
+              4,
+              2,
+              3
+            ]
+          }
+        },
+        "Bmaj7": {
+          "order": 8,
+          "chordName": "Bmaj7",
+          "chordDiagram": {
+            "frets": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "fingers": [
+              4,
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        "B9": {
+          "order": 9,
+          "chordName": "B9",
+          "chordDiagram": {
+            "frets": [
+              2,
+              3,
+              2,
+              4
+            ],
+            "fingers": [
+              1,
+              2,
+              1,
+              3
+            ],
+            "barres": [
+              2
+            ],
+            "capo": true
+          }
+        }
+      }
+    }
+  }
