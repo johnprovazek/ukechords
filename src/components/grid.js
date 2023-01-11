@@ -23,16 +23,24 @@ const Grid = ({ activeChord, other }) => {
   // console.log(chordData[activeChord]["common"])
 
   var activeChordObjectList = chordData[activeChord]["common"]
-  for (let obj in activeChordObjectList) {
-    console.log(obj + ": "+ activeChordObjectList[obj]["order"])
-  }
+  // for (let obj in activeChordObjectList) {
+  //   console.log(obj + ": "+ activeChordObjectList[obj]["order"])
+  // }
 
   return (
     <div className={gridContainer}>
       {Object.keys(activeChordObjectList).map((key) =>
-        <div className={gridItem}>
+        <div key={activeChordObjectList[key]["chordName"]} className={gridItem}>
           <h1>{key}</h1>
           <Chord chord={activeChordObjectList[key]["chordDiagram"]} instrument={instrument} lite={lite}/>
+          <h5> Memorize Slider</h5>
+          <div className="slidecontainer">
+            <input type="range" min="1" max="100" className="slider"></input>
+          </div>
+          <h5> Play Slider</h5>
+          <div className="slidecontainer">
+            <input type="range" min="1" max="100" className="slider"></input>
+          </div>
         </div>
       )}
     </div>
