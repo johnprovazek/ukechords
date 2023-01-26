@@ -1,10 +1,8 @@
 import * as React from 'react'
-import {
-  gridContainer,
-  gridItem
-} from './grid.module.css'
 import chordData from '../data/chords.json';
 import Chord from '@tombatossals/react-chords/lib/Chord'
+import { gridContainer, gridItem } 
+    from "./grid-style";
 
 const instrument = {
   "strings": 4,
