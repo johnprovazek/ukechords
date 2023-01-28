@@ -2,8 +2,13 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';  
-
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Grid from '@mui/material/Grid';
+import UkeChord from "../components/ukeChord";
+import Button from '@mui/material/Button';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import Paper from '@mui/material/Paper';
 
 const MemorizePage = () => {
 
@@ -31,6 +36,25 @@ const MemorizePage = () => {
           <Typography sx={{ width: 327, textTransform: "none"  }}>Chord</Typography>
         </ToggleButton>
       </ToggleButtonGroup>
+      <Grid container spacing={2} mt={2}>
+        <Grid item xs={2} sm={2} md={4} lg={4} xl={3}>
+          <Paper>
+            <Button aria-label="arrow back" color="secondary">
+              <ArrowBackIosIcon />
+            </Button>
+          </Paper>
+        </Grid>
+        <Grid item xs={8} sm={8} md={4} lg={4} xl={6}>
+          <UkeChord chord="C" pageStyle="memorize"></UkeChord>
+        </Grid>
+        <Grid item xs={2} sm={2} md={4} lg={4} xl={3}>
+          <Paper>
+              <Button aria-label="arrow forward" color="secondary">
+                <ArrowForwardIosIcon />
+              </Button>
+            </Paper>
+        </Grid>
+      </Grid>
     </Container>
   );
 };
