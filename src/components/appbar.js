@@ -13,6 +13,7 @@ import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom';
 
 const pages = ['chords', 'memorize', 'play'];
+const dropdownpages = ['home', 'chords', 'memorize', 'play'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,7 +28,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="primary">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <MusicNoteIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -48,7 +49,6 @@ function ResponsiveAppBar() {
           >
             UkeChords
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -78,13 +78,13 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {dropdownpages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                   <Link 
-                   style= {{textDecoration: "none", color: "black"}}
-                   to={`/${page}`}>
-                    {page}
+                    <Link 
+                      style= {{textDecoration: "none", color: "black"}}
+                      to={`/${page}`}>
+                      {page}
                     </Link> 
                     </Typography>
                 </MenuItem>
@@ -119,7 +119,7 @@ function ResponsiveAppBar() {
                 style= {{textDecoration: "none", color: "white"}}
                 to={`/${page}`}>
                     {page}
-                    </Link> 
+                </Link> 
               </Button>
             ))}
           </Box>

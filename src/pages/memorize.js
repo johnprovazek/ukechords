@@ -1,16 +1,37 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-  
+import Container from '@mui/material/Container';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';  
+
+
 const MemorizePage = () => {
+
+  const [style, setStyle] = React.useState("Diagram");
+
+  const handleStyleChange = (event, newStyle) => {
+    if(newStyle !== null){ // Fixes null issue. Investigate bug later.
+      setStyle(newStyle);
+    }
+  };
+
   return (
-    <div>
-      <Typography variant="h3" mt={2} ml={2}>
+    <Container maxWidth="xl">
+      <Typography variant="h3" mt={2} mb={0}>
         Memorize
       </Typography>
-      <Typography paragraph={true} mt={2} ml={2}>
-        This page will show you a chord name followed by a diagram on how to play that chord. Use this section to train your memorization. As you learn chords, mark how well you know them with the memorization slider. The better you memorize the chords, the less they will show up on this page. You can also adjust the memorization sliders for each chord on the Chords page.
+      <Typography paragraph={true} mt={2} mb={0}>
+        This page will help you with chord memorization.
       </Typography>
-    </div>
+      <ToggleButtonGroup value={style} exclusive onChange={handleStyleChange} aria-label="memorization style toggle button" sx={{ mt: 2, flexWrap: 'wrap'}} >
+        <ToggleButton value="Diagram" aria-label="Diagram">
+          <Typography sx={{ width: 327, textTransform: "none"  }}>Diagram</Typography>
+        </ToggleButton>
+        <ToggleButton value="Chord" aria-label="Chord">
+          <Typography sx={{ width: 327, textTransform: "none"  }}>Chord</Typography>
+        </ToggleButton>
+      </ToggleButtonGroup>
+    </Container>
   );
 };
   
