@@ -5,19 +5,20 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-// import UCTypography from '../components/material/ucTypography';
 
-  
 const Home = () => {
   return (
-    <Container maxWidth="xl">
-      <Typography variant="h3" mt={2}>
-        Welcome to UkeChords
-      </Typography>
-      <Typography paragraph={true} mt={2}>
-        This is a website developed to help you learn and memorize ukulele chords. Good luck and have fun!
-      </Typography>
-    </Container>
+    <div>
+      <Container maxWidth="xl">
+        <Typography variant="h3" mt={2}>
+          Welcome to UkeChords
+        </Typography>
+        <Typography paragraph={true} mt={2}>
+          This website is developed to help you learn and memorize ukulele chords. Good luck and have fun!
+        </Typography>
+      <img width="100%" src={require("../data/tiz.png")} alt=""/>
+      </Container>
+    </div>
   );
 };
   
