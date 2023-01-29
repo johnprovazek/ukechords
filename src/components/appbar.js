@@ -11,11 +11,17 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom';
+import { useGoogleLogin } from '@react-oauth/google';
 
 const pages = ['chords', 'memorize', 'play'];
 const dropdownpages = ['home', 'chords', 'memorize', 'play'];
 
 function ResponsiveAppBar() {
+
+  const login = useGoogleLogin({
+    onSuccess: codeResponse => console.log(codeResponse)
+  });
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -123,6 +129,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          <Button color="inherit" onClick={() => login()}>LOGIN</Button>
         </Toolbar>
       </Container>
     </AppBar>
