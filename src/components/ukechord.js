@@ -17,48 +17,73 @@ const instrument = {
   }
 }
 
-function getInitialState() {
-  const localData = localStorage.getItem('localStorageUserChordData')
-  return localData ? JSON.parse(localData) : chordUserDataJSON
+const reducer = (state, action) => {
+  if(action.type === "mSliderValueIncrement"){
+    return {
+      ...state,
+      localChordData:{
+        ...state.localChordData,
+        [action.currentChord]: {
+          ...state.localChordData[action.currentChord],
+          "m": action.mSliderValue_a
+        }
+      },
+      mSliderValue: action.mSliderValue_a
+    }
+  }
+  else if(action.type === "pSliderValueIncrement"){
+    return {
+      ...state,
+      localChordData:{
+        ...state.localChordData,
+        [action.currentChord]: {
+          ...state.localChordData[action.currentChord],
+          "p": action.pSliderValue_a
+        }
+      },
+      pSliderValue: action.pSliderValue_a
+    }
+  }
+  else if(action.type === "chordChange"){
+    return {
+      ...state,
+      mSliderValue: state.localChordData[action.currentChord]["m"]
+    }
+  }
+  else{
+    return state;
+  }
 }
 
+
 function UkeChord(props) {
+
   const [memorizationHidden, setMemorizationHidden] = React.useState(true);
-  const [localStorageUserChordData, setLocalStorageUserChordData] = React.useState(getInitialState)
-  const [mSliderValue, setMSliderValue] = React.useState(10);
-
-  const handleSlider = e => {
-    var sliderType = e.target.name
-    var sliderValue = e.target.value
-
-    setLocalStorageUserChordData({
-      ...localStorageUserChordData,
-      [props.chord]: {
-        ...localStorageUserChordData[props.chord],
-        [sliderType]: sliderValue
-      }
-    });
-    setMSliderValue(sliderValue)
-  }
+  const [{ localChordData, mSliderValue, pSliderValue}, dispatch] = React.useReducer(reducer, {
+    localChordData: localStorage.getItem('localChordData') ? JSON.parse(localStorage.getItem('localChordData')) : chordUserDataJSON,
+    mSliderValue: 10, 
+    pSliderValue: 10
+  })
 
   useEffect(() => {
-    console.log("localStorageUserChordData Changed")
-    localStorage.setItem('localStorageUserChordData', JSON.stringify(localStorageUserChordData))
-    console.log(localStorageUserChordData)
-  }, [localStorageUserChordData])
+    console.log("localChordData Changed")
+    localStorage.setItem('localChordData', JSON.stringify(localChordData))
+    console.log(localChordData)
+  }, [localChordData])
 
+  useEffect(() => {
+    console.log("props.chord Changed")
+    const currentChord = props.chord
+    dispatch({ type: "chordChange", currentChord })
+    setMemorizationHidden(true);
+  },[props.chord]);
+  
   const handleMemorizationToggle = () => {
     if(memorizationHidden){
       setMemorizationHidden(false);
     }
   };
-
-  useEffect(() => {
-    console.log("props.chord Changed")
-    setMSliderValue(localStorageUserChordData[props.chord]["m"])
-    setMemorizationHidden(true);
-  },[props.chord]);
-
+  
   // Refactor this later
   if (props.pageStyle === "chords") {
     return (
@@ -98,7 +123,13 @@ function UkeChord(props) {
         <Typography visibility={memorizationHidden ? "hidden" : "visible"} variant="h6"> Memorize Slider</Typography>
         <Slider value={mSliderValue} step={10} min={0} max={100}
           marks={[{value: 0,label: 'Beginner'},{value: 100,label: 'Advanced'},]}
-          sx={{ width: 1/2, visibility: memorizationHidden ? "hidden" : "visible"}} aria-label="Memorize Slider" name="m" onChange={handleSlider}/>
+          sx={{ width: 1/2, visibility: memorizationHidden ? "hidden" : "visible"}} aria-label="Memorize Slider" name="m" 
+          onChange={e => {
+            const mSliderValue_a = e.target.value
+            const currentChord = props.chord
+            dispatch({ type: "mSliderValueIncrement", mSliderValue_a, currentChord })
+          }}
+        />
       </Paper>
     );
   }
