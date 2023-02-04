@@ -27,11 +27,18 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
- 
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  // function dumbButtonClick(){
+  //   localStorage.setItem("test", "new");
+  // }
+  // function funButtonClick(){
+  //   const saved = localStorage.getItem("test");
+  //   console.log(saved)
+  // }
 
   return (
     <AppBar position="static" color="primary">
@@ -130,6 +137,8 @@ function ResponsiveAppBar() {
             ))}
           </Box>
           <Button color="inherit" onClick={() => login()}>LOGIN</Button>
+          {/* <Button color="inherit" onClick={dumbButtonClick}>DUMB</Button>
+          <Button color="inherit" onClick={funButtonClick}>FUN</Button> */}
         </Toolbar>
       </Container>
     </AppBar>
