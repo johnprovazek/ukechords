@@ -23,7 +23,7 @@ const ChordsPage = () => {
         Chords
       </Typography>
       <Typography paragraph={true} mt={2} mb={0}>
-        This page will show your overall progess towards learning chords.
+        This page shows your overall progess towards learning chords.
       </Typography>
       <ToggleButtonGroup value={activeChord} exclusive onChange={handleChordChange} aria-label="chord toggle button" sx={{ mt: 2, flexWrap: 'wrap'}} >
         <ToggleButton value="All" aria-label="All">

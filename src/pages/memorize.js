@@ -1,4 +1,5 @@
 import React from 'react';
+// import { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import ToggleButton from '@mui/material/ToggleButton';
@@ -13,7 +14,7 @@ import chordsList from '../data/chordsList.json';
 const MemorizePage = () => {
 
   const [memorizationStyle, setMemorizationStyle] = React.useState("Diagram");
-  const [randomChord, setRandomChord] = React.useState("C");
+  const [randomChord, setRandomChord] = React.useState(initChord());
 
   const handleMemorizationStyleChange = (event, newMemorizationStyle) => {
     if(newMemorizationStyle !== null){ // Fixes null issue. Investigate bug later.
@@ -25,6 +26,13 @@ const MemorizePage = () => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  function initChord(){
+    var max = chordsList["All"].length - 1
+    var randomIndex = getRandomInt(0, max)
+    var nextRandomChord = chordsList["All"][randomIndex]
+    return nextRandomChord
   }
 
   function nextChord(){
@@ -40,7 +48,7 @@ const MemorizePage = () => {
         Memorize
       </Typography>
       <Typography paragraph={true} mt={2} mb={0}>
-        This page will help you with chord memorization.
+        This page helps test your chord memorization.
       </Typography>
       <ToggleButtonGroup value={memorizationStyle} exclusive onChange={handleMemorizationStyleChange} aria-label="memorization style toggle button" sx={{ mt: 2, flexWrap: 'wrap'}} >
         <ToggleButton value="Diagram" aria-label="Diagram">
