@@ -1,5 +1,4 @@
-import React from 'react';
-// import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import ToggleButton from '@mui/material/ToggleButton';
@@ -9,37 +8,119 @@ import UkeChord from "../components/ukeChord";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import Paper from '@mui/material/Paper';
-import chordsList from '../data/chordsList.json';
+import chordUserDataJSON from '../data/chordsUserData.json';
+import Button from '@mui/material/Button';
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "addNewChord":
+      return {
+        mChordArray : [...state.mChordArray, action.newChord], 
+        mHidden : true,
+        index : action.newIndex
+      }
+    case "updateIndex":
+      return {
+        ...state,
+        mHidden: false,
+        index : action.newIndex
+      }
+    case "updateHidden":
+      return {
+        ...state,
+        mHidden: action.newHidden,
+      }
+    default:
+      return state
+  }
+}
 
 const MemorizePage = () => {
+  const [mStyle, setMStyle] = React.useState("Diagram");
+  const [sortedMasterChordArray, setSortedMasterChordArray] = React.useState(() => setupSortedMasterChordArray())
+  const [visitedAll, setVisitedAll] = React.useState(false);
+  const [{mChordArray, mHidden, index}, dispatch] = React.useReducer(reducer, {
+    mChordArray : ["C"],
+    mHidden: true,
+    index : 0
+  })
 
-  const [memorizationStyle, setMemorizationStyle] = React.useState("Diagram");
-  const [randomChord, setRandomChord] = React.useState(initChord());
-
-  const handleMemorizationStyleChange = (event, newMemorizationStyle) => {
-    if(newMemorizationStyle !== null){ // Fixes null issue. Investigate bug later.
-      setMemorizationStyle(newMemorizationStyle);
+  const handleMStyleChange = (event, newMStyle) => {
+    if(newMStyle !== null){ // Fixes null issue. Investigate bug later.
+      setMStyle(newMStyle);
     }
   };
 
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  function setupSortedMasterChordArray(){
+    let localChordData = localStorage.getItem('localChordData') ? JSON.parse(localStorage.getItem('localChordData')) : chordUserDataJSON
+    let sortable = []
+    for (var chord in localChordData) {
+        sortable.push([chord, localChordData[chord]["m"]])
+    }
+    sortable.sort(function(a, b) {
+        return a[1] - b[1]
+    });
+    let masterArray = []
+    for (var i in sortable) {
+      masterArray.push(sortable[i][0])
+    }
+    return masterArray
   }
 
-  function initChord(){
-    var max = chordsList["All"].length - 1
-    var randomIndex = getRandomInt(0, max)
-    var nextRandomChord = chordsList["All"][randomIndex]
-    return nextRandomChord
+  function getNextChord(){
+    if(sortedMasterChordArray.length === 0){
+      setVisitedAll(true)
+      // create a refresh button
+      setupSortedMasterChordArray()
+    }
+    else{
+      let min = 0;
+      let max = Math.floor(sortedMasterChordArray.length - 1)
+      let weightedVal = Math.pow(Math.random(), 2) // create better function later
+      let randomIndex = Math.floor(weightedVal * (max - min + 1)) + min;
+      console.log(Math.random())
+      return sortedMasterChordArray[randomIndex]
+    }
   }
 
-  function nextChord(){
-    var max = chordsList["All"].length - 1
-    var randomIndex = getRandomInt(0, max)
-    var nextRandomChord = chordsList["All"][randomIndex]
-    setRandomChord(nextRandomChord)
+  function nextButton(){
+    if(index < mChordArray.length){
+      if(index === mChordArray.length - 1){
+        let newChord = getNextChord()
+        let newIndex = index + 1
+        dispatch({ type: "addNewChord", newChord, newIndex})
+      }
+      else{
+        let newIndex = index + 1
+        dispatch({ type: "updateIndex", newIndex})
+      }
+    }
+  }
+
+  function previousButton(){
+    if(index > 0){
+      let newIndex = index - 1
+      dispatch({ type: "updateIndex", newIndex})
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('keydown', detectKeyDown, true)
+  }, [])
+
+  const detectKeyDown = (e) => {
+    if(e.key === " "){
+      console.log("space")
+    }
+    else if(e.key === "Enter"){
+      console.log("enter")
+    }
+    else if(e.key === "ArrowRight"){
+      console.log("right")
+    }
+    else if(e.key === "ArrowLeft"){
+      console.log("left")
+    }
   }
 
   return (
@@ -50,7 +131,7 @@ const MemorizePage = () => {
       <Typography paragraph={true} mt={2} mb={0}>
         This page helps test your chord memorization.
       </Typography>
-      <ToggleButtonGroup value={memorizationStyle} exclusive onChange={handleMemorizationStyleChange} aria-label="memorization style toggle button" sx={{ mt: 2, flexWrap: 'wrap'}} >
+      <ToggleButtonGroup value={mStyle} exclusive onChange={handleMStyleChange} aria-label="memorization style toggle button" sx={{ mt: 2, flexWrap: 'wrap'}} >
         <ToggleButton value="Diagram" aria-label="Diagram">
           <Typography sx={{ width: 327, textTransform: "none"  }}>Diagram</Typography>
         </ToggleButton>
@@ -60,16 +141,53 @@ const MemorizePage = () => {
       </ToggleButtonGroup>
       <Grid container spacing={2} mt={2}>
         <Grid item xs={2} sm={2} md={4} lg={4} xl={3}>
-          <Paper sx={{ boxShadow: "none", backgroundColor: "transparent", height: "100%", display: "flex", alignItems: "center" }}>
-            <ArrowBackIosIcon color="secondary" sx={{ width: "min(80%,75px)", height: "auto", margin: "0 auto", display: "block"}}/>
+          <Paper 
+            onClick={previousButton}
+            sx={{ 
+              boxShadow: "none", 
+              backgroundColor: "transparent", 
+              height: "100%", 
+              display: "flex", 
+              alignItems: "center", 
+              cursor: index === 0 ? "default" : "pointer"
+            }}>
+            <ArrowBackIosIcon 
+              color="secondary" 
+              sx={{ 
+                width: "min(80%,75px)", 
+                height: "auto", 
+                margin: "0 auto", 
+                display: "block",
+                opacity: index === 0 ? "0.2" : "1.0"
+              }}
+            />
           </Paper>
         </Grid>
         <Grid item xs={8} sm={8} md={4} lg={4} xl={6}>
-          <UkeChord chord={randomChord} pageStyle="memorize" memorizationStyle={memorizationStyle}></UkeChord>
+          <UkeChord chord={mChordArray[index]} pageStyle="memorize" mStyle={mStyle} mHidden={mHidden}></UkeChord>
+          {visitedAll && <Button variant="text" sx={{ alignItems: "center", width: "100%"}} onClick={reset}>Click here to Reset.</Button>}
         </Grid>
         <Grid item xs={2} sm={2} md={4} lg={4} xl={3}>
-          <Paper sx={{ boxShadow: "none", backgroundColor: "transparent", height: "100%", display: "flex", alignItems: "center" }} onClick={nextChord}>
-            <ArrowForwardIosIcon color="secondary" sx={{ width: "min(80%,75px)", height: "auto", margin: "0 auto", display: "block"}}/>
+          <Paper 
+            onClick={nextButton}
+            sx={{ 
+              boxShadow: "none", 
+              backgroundColor: "transparent", 
+              height: "100%", 
+              display: "flex", 
+              alignItems: "center",
+              cursor: visitedAll ? "default" : "pointer"
+            }}>
+            <ArrowForwardIosIcon 
+              color="secondary" 
+              sx={{ 
+                width: "min(80%,75px)", 
+                height: "auto", 
+                margin: "0 auto", 
+                display: "block",
+                opacity: visitedAll ? "0.2" : "1.0"
+              }}
+            />
           </Paper>
         </Grid>
       </Grid>

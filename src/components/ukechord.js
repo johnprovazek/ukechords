@@ -45,7 +45,7 @@ const reducer = (state, action) => {
 
 function UkeChord(props) {
 
-  const [memorizationHidden, setMemorizationHidden] = React.useState(true);
+  const [mHidden, setMHidden] = React.useState(props.mHidden);
   const [{ localChordData, mSliderValue, pSliderValue}, dispatch] = React.useReducer(reducer, {
     localChordData: localStorage.getItem('localChordData') ? JSON.parse(localStorage.getItem('localChordData')) : chordUserDataJSON,
     mSliderValue: 10, 
@@ -56,18 +56,18 @@ function UkeChord(props) {
     console.log("localChordData Changed")
     localStorage.setItem('localChordData', JSON.stringify(localChordData))
     console.log(localChordData)
-  }, [localChordData])
+  },[localChordData])
 
   useEffect(() => {
     console.log("props.chord Changed")
     const currentChord = props.chord
     dispatch({ type: "chordChange", currentChord })
-    setMemorizationHidden(true);
-  },[props.chord]);
+    setMHidden(props.mHidden);
+  },[props.chord, props.mHidden]);
   
   const handleMemorizationToggle = () => {
-    if(memorizationHidden){
-      setMemorizationHidden(false);
+    if(mHidden){
+      setMHidden(false);
     }
   };
   
@@ -77,7 +77,7 @@ function UkeChord(props) {
       <Paper sx={{  pt: 2, pb: 2 }}>
         <Typography variant="h3">{props.chord}</Typography>
         <Chord chord={chordDiagramJSON[props.chord]["chordDiagram"]} instrument={instrument} lite={false}/>
-        <Box className="memorizeSliderContainer" >
+        <Box className="memorizeSliderContainer">
           <Typography variant="h6"> Memorize Slider</Typography>
           <Slider value={mSliderValue} step={10} min={0} max={100}
             marks={[{value: 0,label: 'Beginner'},{value: 100,label: 'Advanced'}]}
@@ -91,7 +91,7 @@ function UkeChord(props) {
             }}
           />
         </Box>
-        <Box className="playSliderContainer" sx={{ }}>
+        <Box className="playSliderContainer">
           <Typography variant="h6"> Play Slider</Typography>
           <Slider value={pSliderValue} step={10} min={0} max={100}
             marks={[{value: 0,label: 'Beginner'},{value: 100,label: 'Advanced'},]}
@@ -103,6 +103,10 @@ function UkeChord(props) {
               const slider = "p"
               dispatch({ type: "sliderChange", value, chord, slider})
             }}
+            onKeyPress={e => {
+              var key = e.key;
+              console.log( "You pressed a key: " + key );
+            }}
           />
         </Box>
       </Paper>
@@ -111,26 +115,26 @@ function UkeChord(props) {
   else if (props.pageStyle === "memorize") {
     return (
       <Paper sx={{  pt: 2, pb: 2 }} onClick={handleMemorizationToggle}>
-        <Typography visibility={memorizationHidden ? "hidden" : "visible"} variant="h3" >{props.chord}</Typography>
-        { memorizationHidden ? 
-          <div className="bigChunkMemorizationHidden">
-            { props.memorizationStyle === "Diagram" ? 
+        <Typography visibility={mHidden ? "hidden" : "visible"} variant="h3" >{props.chord}</Typography>
+        { mHidden ? 
+          <Box className="MHiddenSecret" sx= {{cursor: "pointer"}}>
+            { props.mStyle === "Diagram" ? 
               <Chord chord={chordDiagramJSON[props.chord]["chordDiagram"]} instrument={instrument} lite={false}/>
             : 
               <svg width="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 80 70">
                 <text textAnchor="middle" fontSize="large" x="40" y="40" fill="#444444">{props.chord}</text>
               </svg>
             }
-          </div>
+          </Box>
         : 
-          <div className="bigChunkMemorizationShown">
+          <Box className="MHiddenShown">
             <Chord chord={chordDiagramJSON[props.chord]["chordDiagram"]} instrument={instrument} lite={false}/>
-          </div>
+          </Box>
         }
-        <Typography visibility={memorizationHidden ? "hidden" : "visible"} variant="h6"> Memorize Slider</Typography>
+        <Typography visibility={mHidden ? "hidden" : "visible"} variant="h6"> Memorize Slider</Typography>
         <Slider value={mSliderValue} step={10} min={0} max={100}
           marks={[{value: 0,label: 'Beginner'},{value: 100,label: 'Advanced'},]}
-          sx={{ width: 1/2, visibility: memorizationHidden ? "hidden" : "visible", color: mSliderValue === 100 ? "#F58800" : "#1A4645"}} 
+          sx={{ width: 1/2, visibility: mHidden ? "hidden" : "visible", color: mSliderValue === 100 ? "#F58800" : "#1A4645"}} 
           aria-label="Memorize Slider" name="m" 
           onChange={e => {
             const value = e.target.value
