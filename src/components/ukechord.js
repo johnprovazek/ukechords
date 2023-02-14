@@ -8,13 +8,15 @@ import Slider from '@mui/material/Slider';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
+//TODO: probably remove mhidden state just prop
+
 const instrument = {
   "strings": 4,
   "fretsOnChord": 4,
   "name": "ukulele",
   "keys": [],
   "tunings": {
-      standard: ["G", "C", "E", "A"]
+    standard: ["G", "C", "E", "A"]
   }
 }
 
@@ -53,23 +55,20 @@ function UkeChord(props) {
   })
 
   useEffect(() => {
-    console.log("localChordData Changed")
     localStorage.setItem('localChordData', JSON.stringify(localChordData))
-    console.log(localChordData)
   },[localChordData])
 
   useEffect(() => {
-    console.log("props.chord Changed")
     const currentChord = props.chord
     dispatch({ type: "chordChange", currentChord })
     setMHidden(props.mHidden);
   },[props.chord, props.mHidden]);
   
-  const handleMemorizationToggle = () => {
-    if(mHidden){
-      setMHidden(false);
-    }
-  };
+  // const handleMemorizationToggle = () => {
+  //   if(mHidden){
+  //     setMHidden(false);
+  //   }
+  // };
   
   // Refactor this later
   if (props.pageStyle === "chords") {
@@ -114,11 +113,19 @@ function UkeChord(props) {
   }
   else if (props.pageStyle === "memorize") {
     return (
-      <Paper sx={{  pt: 2, pb: 2 }} onClick={handleMemorizationToggle}>
+      <Paper 
+        sx={{
+          pt: 2, 
+          pb: 2,
+          borderWidth: 4,
+          borderColor: mHidden ? "#1A4645" : "#F58800",
+          borderStyle: "solid"
+        }}
+      >
         <Typography visibility={mHidden ? "hidden" : "visible"} variant="h3" >{props.chord}</Typography>
         { mHidden ? 
-          <Box className="MHiddenSecret" sx= {{cursor: "pointer"}}>
-            { props.mStyle === "Diagram" ? 
+          <Box className="MHiddenSecret">
+            { props.mStyle === "Diagram" ?  
               <Chord chord={chordDiagramJSON[props.chord]["chordDiagram"]} instrument={instrument} lite={false}/>
             : 
               <svg width="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 80 70">
