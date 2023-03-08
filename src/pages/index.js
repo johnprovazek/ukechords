@@ -14,7 +14,7 @@ const Home = () => {
           Welcome to UkeChords
         </Typography>
         <Typography paragraph={true} mt={2}>
-          This website is developed to help you learn and memorize ukulele chords. Good luck and have fun!
+          This website is developed to help you learn and memorize ukulele chords.
         </Typography>
       <img width="100%" src={require("../data/tiz.png")} alt=""/>
       </Container>

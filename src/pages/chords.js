@@ -66,9 +66,14 @@ const ChordsPage = () => {
           <Typography sx={{ width: 30, textTransform: "none"  }}>B</Typography>
         </ToggleButton>
       </ToggleButtonGroup>
-      <Grid container spacing={2} mt={2}>
+      <Grid container
+            spacing={2}
+            mt={2}
+            columns={24}
+            justifyContent="center"
+            alignItems="center">
         {chordsList[activeChord].map((key) =>
-          <Grid key={key} item xs={12} sm={6} md={4} lg={4} xl={3}>
+          <Grid key={key} item xs={16} sm={12} md={8} lg={8} xl={6}>
             <UkeChord
               chord={key}
               pageStyle="chords"

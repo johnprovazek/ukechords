@@ -55,3 +55,39 @@ html,body { height:100%; }
 #logo {
   display: none;
 }
+
+/* .MHiddenSecret{
+  background-color: aqua;
+} */
+
+/* .MHiddenShown{
+  background-color: yellow;
+  animation-name: example;
+  animation-duration: 4s;
+} */
+
+/* .mSliderLabel,.mSlider{
+  animation-name: opacityFade;
+  animation-duration: 4s;
+} */
+
+
+@keyframes fadeOutOpacity {
+  from {opacity: 0.0}
+  to {opacity: 1.0}
+}
+
+@keyframes fadeInOpacity {
+  from {opacity: 1.0}
+  to {opacity: 0.0}
+}
+
+@keyframes fadeOutBorder {
+  from {border-color: #1A4645}
+  to {border-color: #F58800}
+}
+
+@keyframes fadeInBorder {
+  from {border-color: #F58800}
+  to {border-color: #1A4645}
+}

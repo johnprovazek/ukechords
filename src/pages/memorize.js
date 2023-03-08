@@ -210,8 +210,13 @@ const MemorizePage = () => {
               <Typography sx={{ width: 327, textTransform: "none"  }}>Chord</Typography>
             </ToggleButton>
           </ToggleButtonGroup>
-          <Grid container spacing={2} mt={2}>
-            <Grid item xs={2} sm={2} md={4} lg={4} xl={3}>
+          <Grid container
+                spacing={2}
+                mt={2}
+                columns={24}
+                justifyContent="center"
+                alignItems="center">
+            <Grid item xs={4} sm={6} md={8} lg={8} xl={9}>
               <Paper 
                 onClick={previousButton}
                 sx={{ 
@@ -234,7 +239,7 @@ const MemorizePage = () => {
                 />
               </Paper>
             </Grid>
-            <Grid item xs={8} sm={8} md={4} lg={4} xl={6}>
+            <Grid item xs={16} sm={12} md={8} lg={8} xl={6}>
               <Box className="memorizationChordContainer"
                 onClick={handleMemorizationToggle}
                 sx={{ 
@@ -244,7 +249,7 @@ const MemorizePage = () => {
                 <UkeChord chord={mChordArray[index]} pageStyle="memorize" mStyle={mStyle} mHidden={mHidden}></UkeChord>
               </Box>
             </Grid>
-            <Grid item xs={2} sm={2} md={4} lg={4} xl={3}>
+            <Grid item xs={4} sm={6} md={8} lg={8} xl={9}>
               <Paper 
                 onClick={nextButton}
                 sx={{ 
@@ -267,11 +272,11 @@ const MemorizePage = () => {
                 />
               </Paper>
             </Grid>
-            <Grid item xs={2} sm={2} md={4} lg={4} xl={3} className="resetButtonGridFiller"></Grid>
-            <Grid item xs={8} sm={8} md={4} lg={4} xl={6}>
+            <Grid item xs={4} sm={6} md={8} lg={8} xl={9} className="resetButtonGridFiller"></Grid>
+            <Grid item xs={16} sm={12} md={8} lg={8} xl={6}>
               {visitedAll && <Button variant="text" sx={{ alignItems: "center", width: "100%"}} onClick={setAll}>You've Reached the end. Click to Reset</Button>}
             </Grid> 
-            <Grid item xs={2} sm={2} md={4} lg={4} xl={3} className="resetButtonGridFiller"></Grid>
+            <Grid item xs={4} sm={6} md={8} lg={8} xl={9} className="resetButtonGridFiller"></Grid>
           </Grid>
         </Box>
 
