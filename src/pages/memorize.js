@@ -1,4 +1,5 @@
 import React from 'react';
+import { useContext } from "react";
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import ToggleButton from '@mui/material/ToggleButton';
@@ -8,13 +9,12 @@ import UkeChord from "../components/ukeChord";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import Paper from '@mui/material/Paper';
-import chordUserDataJSON from '../data/chordsUserData.json';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import ChordDataContext from "../components/chordDataContext";
 
-// TODO:
-// Add smooth CSS transition?
-// Get keyboard keys to work
+// TODO: Add smooth CSS transition?
+// TODO: Get keyboard keys to work
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -57,6 +57,7 @@ const reducer = (state, action) => {
 
 // add chord field to replace mChordArray[index]
 const MemorizePage = () => {
+  const {chordData} = useContext(ChordDataContext);
   const [mStyle, setMStyle] = React.useState("Diagram");
   const [{sChordArray,mChordArray, mHidden, lastMHidden, index, visitedAll}, dispatch] = React.useReducer(reducer, {
     sChordArray : [],
@@ -136,12 +137,11 @@ const MemorizePage = () => {
     console.log(mHidden)
   }
 
-  function setupSChordArray(){ // look to see if i can write this more effciently
-    let localChordData = localStorage.getItem('localChordData') ? JSON.parse(localStorage.getItem('localChordData')) : chordUserDataJSON
+  function setupSChordArray(){ // TODO: look to see if i can write this more effciently
     let sortable = []
-    for (var chord in localChordData) {
-      if(localChordData[chord]["m"] !== 100){
-        sortable.push([chord, localChordData[chord]["m"]])
+    for (var chord in chordData) {
+      if(chordData[chord]["m"] !== 100){
+        sortable.push([chord, chordData[chord]["m"]])
       }
     }
     sortable.sort(function(a, b) {

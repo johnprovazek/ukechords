@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+// import { useContext } from "react";
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -8,9 +9,10 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import UkeChord from "../components/ukeChord";
 import AddIcon from '@mui/icons-material/Add';
-import chordUserDataJSON from '../data/chordsUserData.json';
+// import ChordDataContext from "../components/chordDataContext";
 
 const PlayPage = () => {
+  // const {chordData} = useContext(ChordDataContext);
   const [speed, setSpeed] = React.useState("Slow");
   const [playChords, setPlayChords] = React.useState(["C","D","E","F","G"]);
 
@@ -18,27 +20,25 @@ const PlayPage = () => {
     setSpeed(newSpeed);
   };
 
-  const handlePlayChordsChange = (event, newChordArray) => {
-    setPlayChords(newChordArray);
-  };
+  // const handlePlayChordsChange = (event, newChordArray) => {
+  //   setPlayChords(newChordArray);
+  // };
 
-  function getNewChord(){ // look to see if i can write this more effciently
-    let localChordData = localStorage.getItem('localChordData') ? JSON.parse(localStorage.getItem('localChordData')) : chordUserDataJSON
-    let sortable = []
-    for (var chord in localChordData) {
-      if(localChordData[chord]["p"] !== 100){
-        sortable.push([chord, localChordData[chord]["m"]])
-      }
-    }
-    sortable.sort(function(a, b) {
-        return a[1] - b[1]
-    });
-    let sortedArray = []
-    for (var i in sortable) {
-      sortedArray.push(sortable[i][0])
-    }
-    console.log(sortedArray)
-  }
+  // function getNewChord(){ // TODO: look to see if i can write this more effciently
+  //   let sortable = []
+  //   for (var chord in chordData) {
+  //     if(chordData[chord]["p"] !== 100){
+  //       sortable.push([chord, chordData[chord]["m"]])
+  //     }
+  //   }
+  //   sortable.sort(function(a, b) {
+  //       return a[1] - b[1]
+  //   });
+  //   let sortedArray = []
+  //   for (var i in sortable) {
+  //     sortedArray.push(sortable[i][0])
+  //   }
+  // }
 
   const removeChord = (data) => {
     console.log("removeChord")
@@ -59,9 +59,9 @@ const PlayPage = () => {
   }
 
   // Ran once at start
-  React.useEffect(() => {
-    getNewChord()
-  }, [])
+  // React.useEffect(() => {
+  //   getNewChord()
+  // }, [])
 
   return (
     <Container maxWidth="xl">
