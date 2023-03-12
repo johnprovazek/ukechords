@@ -4,6 +4,15 @@ import { createTheme } from "@mui/material/styles";
 
 export const ukeChordsTheme = createTheme({
   components: {
+    MuiGrid: {
+      styleOverrides: {
+        root: {
+          ".MuiGrid-item": {
+            // padding: "16px"
+          },
+        },
+      },
+    },
     MuiPaper: {
       styleOverrides: {
         root: {

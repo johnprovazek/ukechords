@@ -99,7 +99,7 @@ const MemorizePage = () => {
         let sChordArray_a = [...sChordArray]
         let min = 0;
         let max = Math.floor(sChordArray_a.length - 1)
-        let weightedVal = Math.pow(Math.random(), 2) // create better function later, works for now
+        let weightedVal = Math.pow(Math.random(), 2) // TODO: create better function later, works for now
         let randomIndex = Math.floor(weightedVal * (max - min + 1)) + min;
         let chord_a = sChordArray_a.splice(randomIndex, 1)[0];
         let index_a = index + 1
@@ -195,7 +195,7 @@ const MemorizePage = () => {
           <Typography paragraph={true} mt={2} mb={0}>
             Congrats! You've got them all memorized!
           </Typography>
-          <img width="100%" src={require("../data/tiz2.png")} alt=""/>
+          <img width="100%" src={require("../data/images/tiz2.png")} alt=""/>
         </Box>
         :
         <Box className="memorizationIncomplete">

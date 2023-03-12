@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useEffect } from 'react';
 import { useContext } from "react";
-import chordDiagramJSON from '../data/chordsDiagram.json';
+import chordDiagramJSON from '../data/json/chordsDiagram.json';
 import Chord from '@tombatossals/react-chords/lib/Chord'
 import Paper from '@mui/material/Paper';
 import Slider from '@mui/material/Slider';
@@ -24,6 +24,7 @@ const instrument = {
 function UkeChord(props) {
 
   const {chordData, updateChordData} = useContext(ChordDataContext);
+  // const {chordAudio, setChordAudio} = React.useState(new Audio('../data/audio'))
   const [mSliderValue, setMSliderValue] = React.useState(chordData[props.chord]["m"]);
   const [pSliderValue, setPSliderValue] = React.useState(chordData[props.chord]["p"]);
 
@@ -42,12 +43,6 @@ function UkeChord(props) {
   // Works in Play Page Only
   const displayChordSelector = () => {
     props.displayChordSelector("displaystring")
-  }
-
-  // TODO: works for now, write this better
-  // Works in Play Page Only
-  const randomizeChord = () => {
-    props.randomizeChord(props.chord)
   }
 
   // Refactor this later
@@ -139,7 +134,13 @@ function UkeChord(props) {
   }
   else if (props.pageStyle === "play") {
     return (
-      <Paper sx={{  pt: 2, pb: 2 }}>
+      <Paper sx={{
+        pt: 2,
+        pb: 2,
+        borderStyle: "solid",
+        borderWidth: "5px",
+        borderColor: props.trigger ? "#F58800" : "#FFFFFF"
+      }}>
         <Typography variant="h3">{props.chord}</Typography>
         <Chord chord={chordDiagramJSON[props.chord]["chordDiagram"]} instrument={instrument} lite={false}/>
         <Box className="playSliderContainer">
@@ -161,7 +162,6 @@ function UkeChord(props) {
                 justifyContent="center"
                 alignItems="center"
         >
-          <Button variant="outlined" onClick={randomizeChord}>Randomize</Button>
           <Button variant="outlined" onClick={displayChordSelector} >Change</Button>
           <Button variant="outlined" onClick={removeChord} >Remove</Button>
         </Stack>

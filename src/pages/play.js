@@ -1,5 +1,5 @@
 import React from "react";
-// import { useContext } from "react";
+import { useContext } from "react";
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -9,59 +9,135 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import UkeChord from "../components/ukeChord";
 import AddIcon from '@mui/icons-material/Add';
-// import ChordDataContext from "../components/chordDataContext";
+import ChordDataContext from "../components/chordDataContext";
 
 const PlayPage = () => {
-  // const {chordData} = useContext(ChordDataContext);
-  const [speed, setSpeed] = React.useState("Slow");
-  const [playChords, setPlayChords] = React.useState(["C","D","E","F","G"]);
+  const {chordData} = useContext(ChordDataContext)
+  const [speed, setSpeed] = React.useState(2000)
+  // const [clockID, setClockID] = React.useState()
+  // const [chordActivated, setChordActivated] = React.useState()
+  const [playChordsMap, setPlayChordsMap] = React.useState(
+    [
+      { 
+        chord: "A",
+        trigger: true,
+      },
+      { 
+        chord: "B",
+        trigger: false,
+      },
+      { 
+        chord: "C",
+        trigger: false,
+      },
+    ]
+  )
 
   const handleSpeedChange = (event, newSpeed) => {
-    setSpeed(newSpeed);
+    setSpeed(newSpeed)
   };
 
-  // const handlePlayChordsChange = (event, newChordArray) => {
-  //   setPlayChords(newChordArray);
-  // };
+  // React.useEffect(() => {
+  //   clearInterval(clockID)
+  //   setClockID(setInterval(tick, speed))
+  //   // eslint-disable-next-line
+  // }, [speed])
 
-  // function getNewChord(){ // TODO: look to see if i can write this more effciently
-  //   let sortable = []
-  //   for (var chord in chordData) {
-  //     if(chordData[chord]["p"] !== 100){
-  //       sortable.push([chord, chordData[chord]["m"]])
-  //     }
-  //   }
-  //   sortable.sort(function(a, b) {
-  //       return a[1] - b[1]
-  //   });
-  //   let sortedArray = []
-  //   for (var i in sortable) {
-  //     sortedArray.push(sortable[i][0])
-  //   }
-  // }
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      tick()
+    }, speed);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line
+  }, [speed,playChordsMap]);
 
-  const removeChord = (data) => {
-    console.log("removeChord")
-    console.log(data)
-    console.log(playChords)
-    const newPlayChords = playChords.filter((t) => t !== data);
-    setPlayChords(newPlayChords);
+  function tick() {
+    // console.log("Print every ", speed, " milliseconds");
+    let newPlayChordsMap = [...playChordsMap]
+    console.log(newPlayChordsMap)
+    let trueIndex = 0
+    for (let i = 0; i < newPlayChordsMap.length; i++){
+      if(newPlayChordsMap[i].trigger){
+        trueIndex = i
+      }
+      newPlayChordsMap[i].trigger = false
+    }
+    if(trueIndex === newPlayChordsMap.length - 1){
+      trueIndex = 0
+    }
+    else{
+      trueIndex = trueIndex + 1;
+    }
+    newPlayChordsMap[trueIndex].trigger = true
+    setPlayChordsMap(newPlayChordsMap);
+  };
+
+  const removeChord = (chord) => {
+    let newPlayChordsMap = [...playChordsMap]
+    for(let index in newPlayChordsMap){
+      if(newPlayChordsMap[index].chord === chord){
+        newPlayChordsMap.splice(index, 1);
+      }
+    }
+    setPlayChordsMap(newPlayChordsMap);
   }
 
   const displayChordSelector = (data) => {
-    console.log("displayChordSelector")
-    console.log(data)
   }
 
-  const randomizeChord = (data) => {
-    console.log("randomizeChord")
-    console.log(data)
+  function randomizeChords(method){
+    let newPlayChordsMap = []
+    let index = 0
+    let numChords = 0
+    if(method === "all"){ // randomizing all chords
+      if(playChordsMap.length === 0){
+        let min = 2
+        let max = 6
+        numChords = Math.floor(Math.random() * (max - min + 1) + min)
+      }
+      else{
+        numChords = playChordsMap.length
+      }
+    }
+    else if(method === "next"){  // randomizing just the next chord
+      newPlayChordsMap = [...playChordsMap]
+      index = playChordsMap.length
+      numChords = playChordsMap.length + 1
+    }
+    let sortedPlayData = [] // Array of all chords and their play progress, sorted by play progess 
+    for (let chord in chordData) {
+      if(chordData[chord]["p"] !== 100){ // Once play progress is at 100 it won't be shown
+        sortedPlayData.push([chord, chordData[chord]["p"]])
+      }
+    }
+    sortedPlayData.sort(function(a, b) {
+      return a[1] - b[1]
+    });
+    for (let i in newPlayChordsMap) { // removing possiblity of duplicates
+      var spliceIndex = -1
+      for (let j in sortedPlayData){
+        if(newPlayChordsMap[i].chord === sortedPlayData[j][0]){
+          spliceIndex = j
+          break
+        }
+      }
+      if (spliceIndex > -1) {
+        sortedPlayData.splice(spliceIndex, 1);
+      }
+    }
+    for (let i = index; i < numChords; i++){ // Randomizing new chords
+      let min = 0
+      let max = sortedPlayData.length - 1
+      let weightedVal = Math.pow(Math.random(), 2) // TODO: create better function later, works for now
+      let randomIndex = Math.floor(weightedVal * (max - min + 1)) + min
+      let randomChord = sortedPlayData.splice(randomIndex, 1)[0][0];
+      newPlayChordsMap.push({
+        chord: randomChord,
+        trigger: false,
+      })
+    }
+    setPlayChordsMap(newPlayChordsMap)
   }
-
-  // Ran once at start
-  // React.useEffect(() => {
-  //   getNewChord()
-  // }, [])
 
   return (
     <Container maxWidth="xl">
@@ -72,34 +148,46 @@ const PlayPage = () => {
         This page tests how well you can play chords.
       </Typography>
       <ToggleButtonGroup value={speed} exclusive onChange={handleSpeedChange} aria-label="speed change toggle" sx={{ mt: 2, flexWrap: 'wrap'}} >
-        <ToggleButton value="Slow" aria-label="Slow">
+        <ToggleButton value={2000} aria-label="Slow">
           <Typography sx={{ width: 218, textTransform: "none"  }}>Slow</Typography>
         </ToggleButton>
-        <ToggleButton value="Normal" aria-label="Fast">
+        <ToggleButton value={1000} aria-label="Normal">
           <Typography sx={{ width: 218, textTransform: "none"  }}>Normal</Typography>
         </ToggleButton>
-        <ToggleButton value="Fast" aria-label="Fast">
+        <ToggleButton value={500} aria-label="Fast">
           <Typography sx={{ width: 218, textTransform: "none"  }}>Fast</Typography>
         </ToggleButton>
       </ToggleButtonGroup>
-      <Button>Randomize All</Button>
+      <Button 
+        onClick={e => {
+          const method = "all"
+          randomizeChords(method)
+        }}
+      > 
+        Randomize All
+      </Button>
       <Grid container spacing={2} mt={2}>
-        {playChords.map((key) =>
-          <Grid key={key} item xs={12} sm={6} md={4} lg={4} xl={3}>
-            <UkeChord chord={key} pageStyle="play" removeChord={removeChord} displayChordSelector={displayChordSelector} randomizeChord={randomizeChord}></UkeChord>
+        {playChordsMap.map((item, index) => (
+          <Grid key={index} item xs={12} sm={6} md={4} lg={4} xl={3}>
+            <UkeChord chord={item.chord} trigger={item.trigger} pageStyle="play" removeChord={removeChord} displayChordSelector={displayChordSelector}></UkeChord>
           </Grid>
-        )}
-        {playChords.length === 6 ? 
+        ))}
+        {playChordsMap.length === 6 ?
           null
           : 
           <Grid item xs={12} sm={6} md={4} lg={4} xl={3}>
             <Paper sx={{ 
               backgroundColor: "transparent", 
-              height: "100%", 
-              display: "flex", 
+              display: "flex",
+              height: "100%",
               alignItems: "center",
-              cursor: "pointer" 
-            }}>
+              cursor: "pointer",
+            }}
+            onClick={e => {
+              const method = "next"
+              randomizeChords(method)
+            }}
+            >
               <AddIcon 
                     color="secondary" 
                     sx={{ 
@@ -116,5 +204,5 @@ const PlayPage = () => {
     </Container>
   );
 };
-  
+
 export default PlayPage;

@@ -16,7 +16,7 @@ const Home = () => {
         <Typography paragraph={true} mt={2}>
           This website is developed to help you learn and memorize ukulele chords.
         </Typography>
-      <img width="100%" src={require("../data/tiz.png")} alt=""/>
+      <img width="100%" src={require("../data/images/tiz.png")} alt=""/>
       </Container>
     </div>
   );

@@ -11,7 +11,7 @@ import ChordPage from './pages/chords';
 import MemorizePage from './pages/memorize';
 import PlayPage from './pages/play';
 import ChordDataContext from "./components/chordDataContext";
-import chordUserDataJSON from './data/chordsUserData.json';
+import chordUserDataJSON from './data/json/chordsUserData.json';
 
 function App() {
 
