@@ -1,0 +1,142 @@
+diff --git a/node_modules/@tombatossals/react-chords/lib/Chord/Barre/index.js b/node_modules/@tombatossals/react-chords/lib/Chord/Barre/index.js
+index 906d268..03dd038 100644
+--- a/node_modules/@tombatossals/react-chords/lib/Chord/Barre/index.js
++++ b/node_modules/@tombatossals/react-chords/lib/Chord/Barre/index.js
+@@ -94,7 +94,7 @@ var Barre = function Barre(_ref) {
+     return _react["default"].createElement("text", {
+       key: fret.position,
+       fontSize: "3pt",
+-      fontFamily: "Verdana",
++      fontFamily: "Signika Variable",
+       textAnchor: "middle",
+       fill: "white",
+       x: getStringPosition(strings - fret.position, strings),
+diff --git a/node_modules/@tombatossals/react-chords/lib/Chord/Dot/index.js b/node_modules/@tombatossals/react-chords/lib/Chord/Dot/index.js
+index 9d0e540..3526525 100644
+--- a/node_modules/@tombatossals/react-chords/lib/Chord/Dot/index.js
++++ b/node_modules/@tombatossals/react-chords/lib/Chord/Dot/index.js
+@@ -32,14 +32,14 @@ var radius = {
+ 
+ var Dot = function Dot(_ref) {
+   var string = _ref.string,
+-      fret = _ref.fret,
++      fret = _ref.fret || 0,
+       finger = _ref.finger,
+       strings = _ref.strings,
+-      lite = _ref.lite;
++      lite = _ref.lite || false;
+   return fret === -1 ? _react["default"].createElement("text", {
+     fontSize: "0.7rem",
+     fill: "#444",
+-    fontFamily: "Verdana",
++    fontFamily: "Signika Variable",
+     textAnchor: "middle",
+     x: getStringPosition(string, strings),
+     y: "-2"
+@@ -52,7 +52,7 @@ var Dot = function Dot(_ref) {
+     r: fret === 0 ? radius['open'] : radius['fret']
+   }), !lite && finger > 0 && _react["default"].createElement("text", {
+     fontSize: "3pt",
+-    fontFamily: "Verdana",
++    fontFamily: "Signika Variable",
+     textAnchor: "middle",
+     fill: "white",
+     x: getStringPosition(string, strings),
+@@ -67,9 +67,9 @@ Dot.propTypes = {
+   strings: _propTypes["default"].number.isRequired,
+   lite: _propTypes["default"].bool
+ };
+-Dot.defaultProps = {
+-  fret: 0,
+-  lite: false
+-};
++// Dot.defaultProps = {
++//   fret: 0,
++//   lite: false
++// };
+ var _default = Dot;
+ exports["default"] = _default;
+\ No newline at end of file
+diff --git a/node_modules/@tombatossals/react-chords/lib/Chord/Neck/index.js b/node_modules/@tombatossals/react-chords/lib/Chord/Neck/index.js
+index f7c231e..4e25fea 100644
+--- a/node_modules/@tombatossals/react-chords/lib/Chord/Neck/index.js
++++ b/node_modules/@tombatossals/react-chords/lib/Chord/Neck/index.js
+@@ -49,9 +49,9 @@ var Neck = function Neck(_ref) {
+       frets = _ref.frets,
+       strings = _ref.strings,
+       fretsOnChord = _ref.fretsOnChord,
+-      baseFret = _ref.baseFret,
++      baseFret = _ref.baseFret || 1,
+       capo = _ref.capo,
+-      lite = _ref.lite;
++      lite = _ref.lite || false;
+   return _react["default"].createElement("g", null, _react["default"].createElement("path", {
+     stroke: "#444",
+     strokeWidth: "0.25",
+@@ -67,7 +67,7 @@ var Neck = function Neck(_ref) {
+   }) : _react["default"].createElement("text", {
+     fontSize: "0.25rem",
+     fill: "#444",
+-    fontFamily: "Verdana",
++    fontFamily: "Signika Variable",
+     x: getBarreOffset(strings, frets, baseFret, capo),
+     y: "8"
+   }, baseFret, "fr"), !lite && _react["default"].createElement("g", null, tuning.slice().map(function (note, index) {
+@@ -75,7 +75,7 @@ var Neck = function Neck(_ref) {
+       key: index,
+       fontSize: "0.3rem",
+       fill: "#444",
+-      fontFamily: "Verdana",
++      fontFamily: "Signika Variable",
+       textAnchor: "middle",
+       x: offsets[strings].x + index * 10,
+       y: "53"
+@@ -92,9 +92,9 @@ Neck.propTypes = {
+   fretsOnChord: _propTypes["default"].number.isRequired,
+   lite: _propTypes["default"].bool
+ };
+-Neck.defaultProps = {
+-  baseFret: 1,
+-  lite: false
+-};
++// Neck.defaultProps = {
++//   baseFret: 1,
++//   lite: false
++// };
+ var _default = Neck;
+ exports["default"] = _default;
+\ No newline at end of file
+diff --git a/node_modules/@tombatossals/react-chords/lib/Chord/index.js b/node_modules/@tombatossals/react-chords/lib/Chord/index.js
+index 6b27fb6..a8d1da2 100644
+--- a/node_modules/@tombatossals/react-chords/lib/Chord/index.js
++++ b/node_modules/@tombatossals/react-chords/lib/Chord/index.js
+@@ -33,14 +33,14 @@ var onlyDots = function onlyDots(chord) {
+ var Chord = function Chord(_ref) {
+   var chord = _ref.chord,
+       instrument = _ref.instrument,
+-      lite = _ref.lite;
++      lite = _ref.lite || false;
+   return chord ? _react["default"].createElement("svg", {
+     width: "100%",
+     xmlns: "http://www.w3.org/2000/svg",
+     preserveAspectRatio: "xMinYMin meet",
+     viewBox: "0 0 80 70"
+   }, _react["default"].createElement("g", {
+-    transform: "translate(13, 13)"
++    transform: "translate(15, 13)"
+   }, _react["default"].createElement(_Neck["default"], {
+     tuning: instrument.tunings.standard,
+     strings: instrument.strings,
+@@ -75,8 +75,8 @@ Chord.propTypes = {
+   instrument: _propTypes2.instrumentPropTypes,
+   lite: _propTypes["default"].bool
+ };
+-Chord.defaultProps = {
+-  lite: false
+-};
++// Chord.defaultProps = {
++//   lite: false
++// };
+ var _default = Chord;
+ exports["default"] = _default;
+\ No newline at end of file

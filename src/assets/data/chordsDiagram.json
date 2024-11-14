@@ -1,0 +1,2276 @@
+{
+  "C": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "fingers": [
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Cm": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "fingers": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "C7": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "fingers": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Cm7": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Csus2": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "fingers": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "agreement": false
+  },
+  "Cmaj7": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "fingers": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Cdim": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        4,
+        2,
+        1,
+        2
+      ],
+      "fingers": [
+        4,
+        2,
+        1,
+        3
+      ],
+      "baseFret": 2
+    },
+    "agreement": true
+  },
+  "Caug": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "fingers": [
+        1,
+        0,
+        0,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "C6": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fingers": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "C9": {
+    "baseChord": "C",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        0,
+        3
+      ],
+      "fingers": [
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    "agreement": false
+  },
+  "Db": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "barres": [
+        1
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Dbm": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        0,
+        4
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Db7": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "barres": [
+        1
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Dbm7": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Dbsus2": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "fingers": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "barres": [
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Dbmaj7": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "barres": [
+        1
+      ],
+      "capo": true
+    },
+    "agreement": false
+  },
+  "Dbdim": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        0,
+        1,
+        0,
+        4
+      ],
+      "fingers": [
+        0,
+        1,
+        0,
+        4
+      ]
+    },
+    "agreement": false
+  },
+  "Dbaug": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "fingers": [
+        3,
+        1,
+        2,
+        0
+      ]
+    },
+    "agreement": false
+  },
+  "Db6": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Db9": {
+    "baseChord": "Db",
+    "chordDiagram": {
+      "frets": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "fingers": [
+        3,
+        2,
+        1,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "D": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "fingers": [
+        1,
+        2,
+        3,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Dm": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "fingers": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "D7": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "barres": [
+        2
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Dm7": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "fingers": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Dsus2": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Dmaj7": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "barres": [
+        2
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Ddim": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        4,
+        2,
+        1,
+        2
+      ],
+      "fingers": [
+        4,
+        2,
+        1,
+        3
+      ],
+      "baseFret": 4
+    },
+    "agreement": true
+  },
+  "Daug": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "fingers": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "D6": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "D9": {
+    "baseChord": "D",
+    "chordDiagram": {
+      "frets": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "fingers": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "baseFret": 2
+    },
+    "agreement": true
+  },
+  "Eb": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        3,
+        1
+      ],
+      "fingers": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    "agreement": false
+  },
+  "Ebm": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "fingers": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Eb7": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        3,
+        3,
+        4
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "barres": [
+        3
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Ebm7": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        3,
+        2,
+        4
+      ],
+      "fingers": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "barres": [
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Ebsus2": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        4,
+        1,
+        1
+      ],
+      "fingers": [
+        3,
+        4,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Ebmaj7": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "barres": [
+        1
+      ],
+      "baseFret": 3,
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Ebdim": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        2,
+        3,
+        2,
+        0
+      ],
+      "fingers": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Ebaug": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "fingers": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Eb6": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Eb9": {
+    "baseChord": "Eb",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        1,
+        4
+      ],
+      "fingers": [
+        0,
+        3,
+        1,
+        4
+      ]
+    },
+    "agreement": false
+  },
+  "E": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        1,
+        4,
+        0,
+        2
+      ],
+      "fingers": [
+        1,
+        4,
+        0,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Em": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        0,
+        4,
+        3,
+        2
+      ],
+      "fingers": [
+        0,
+        3,
+        2,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "E7": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Em7": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "fingers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    "agreement": false
+  },
+  "Esus2": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "fingers": [
+        3,
+        4,
+        1,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Emaj7": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "fingers": [
+        1,
+        3,
+        0,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Edim": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        0,
+        4,
+        3,
+        1
+      ],
+      "fingers": [
+        0,
+        3,
+        2,
+        1
+      ]
+    },
+    "agreement": false
+  },
+  "Eaug": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "fingers": [
+        1,
+        0,
+        0,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "E6": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "E9": {
+    "baseChord": "E",
+    "chordDiagram": {
+      "frets": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "agreement": false
+  },
+  "F": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        2,
+        0,
+        1,
+        0
+      ],
+      "fingers": [
+        2,
+        0,
+        1,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Fm": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "fingers": [
+        1,
+        0,
+        2,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "F7": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        2,
+        3,
+        1,
+        3
+      ],
+      "fingers": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Fm7": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "fingers": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Fsus2": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "fingers": [
+        0,
+        0,
+        1,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Fmaj7": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        2,
+        4,
+        1,
+        3
+      ],
+      "fingers": [
+        2,
+        4,
+        1,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Fdim": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        3,
+        4,
+        3,
+        1
+      ],
+      "fingers": [
+        2,
+        4,
+        3,
+        1
+      ],
+      "baseFret": 2
+    },
+    "agreement": false
+  },
+  "Faug": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "fingers": [
+        3,
+        1,
+        2,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "F6": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "fingers": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    "agreement": false
+  },
+  "F9": {
+    "baseChord": "F",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        1,
+        0
+      ],
+      "fingers": [
+        0,
+        2,
+        1,
+        0
+      ]
+    },
+    "agreement": false
+  },
+  "Gb": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "fingers": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "barres": [
+        1
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Gbm": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "fingers": [
+        2,
+        1,
+        3,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Gb7": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        4,
+        2,
+        4
+      ],
+      "fingers": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Gbm7": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        2,
+        4,
+        2,
+        4
+      ],
+      "fingers": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Gbsus2": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        2,
+        4
+      ],
+      "fingers": [
+        1,
+        1,
+        2,
+        4
+      ],
+      "barres": [
+        1
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Gbmaj7": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        2,
+        4,
+        1,
+        3
+      ],
+      "fingers": [
+        2,
+        4,
+        1,
+        3
+      ],
+      "baseFret": 2
+    },
+    "agreement": true
+  },
+  "Gbdim": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "fingers": [
+        2,
+        0,
+        3,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Gbaug": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "fingers": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Gb6": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        3,
+        2,
+        4
+      ],
+      "fingers": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Gb9": {
+    "baseChord": "Gb",
+    "chordDiagram": {
+      "frets": [
+        1,
+        4,
+        2,
+        1
+      ],
+      "fingers": [
+        1,
+        2,
+        4,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "G": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        3,
+        2
+      ],
+      "fingers": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Gm": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "fingers": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "G7": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "fingers": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Gm7": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "fingers": [
+        0,
+        3,
+        1,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Gsus2": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        3,
+        0
+      ],
+      "fingers": [
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Gmaj7": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "fingers": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Gdim": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "fingers": [
+        0,
+        1,
+        4,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Gaug": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "fingers": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "G6": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "fingers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "G9": {
+    "baseChord": "G",
+    "chordDiagram": {
+      "frets": [
+        0,
+        4,
+        4,
+        1
+      ],
+      "fingers": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "baseFret": 2
+    },
+    "agreement": false
+  },
+  "Ab": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        4,
+        3
+      ],
+      "fingers": [
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    "agreement": false
+  },
+  "Abm": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        4,
+        2
+      ],
+      "fingers": [
+        1,
+        3,
+        4,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Ab7": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        2,
+        3
+      ],
+      "fingers": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Abm7": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "fingers": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Absus2": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        4,
+        1
+      ],
+      "fingers": [
+        1,
+        3,
+        4,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Abmaj7": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        4,
+        3
+      ],
+      "fingers": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    "agreement": false
+  },
+  "Abdim": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        2,
+        4,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Abaug": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "fingers": [
+        1,
+        0,
+        0,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Ab6": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "fingers": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "Ab9": {
+    "baseChord": "Ab",
+    "chordDiagram": {
+      "frets": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "fingers": [
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "A": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "fingers": [
+        2,
+        1,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Am": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "fingers": [
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "A7": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "fingers": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Am7": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fingers": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Asus2": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        4,
+        4,
+        0,
+        0
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    "agreement": false
+  },
+  "Amaj7": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "fingers": [
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "Adim": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        1,
+        2,
+        4,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "baseFret": 2
+    },
+    "agreement": true
+  },
+  "Aaug": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "fingers": [
+        3,
+        1,
+        2,
+        0
+      ]
+    },
+    "agreement": true
+  },
+  "A6": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        2,
+        4,
+        2,
+        4
+      ],
+      "fingers": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    "agreement": true
+  },
+  "A9": {
+    "baseChord": "A",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        3,
+        2
+      ],
+      "fingers": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    "agreement": false
+  },
+  "Bb": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "fingers": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Bbm": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "fingers": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Bb7": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "fingers": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Bbm7": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Bbsus2": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        0,
+        1,
+        1
+      ],
+      "fingers": [
+        3,
+        0,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": false
+  },
+  "Bbmaj7": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "fingers": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    "agreement": false
+  },
+  "Bbdim": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        1,
+        0,
+        1
+      ],
+      "fingers": [
+        3,
+        1,
+        0,
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Bbaug": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "fingers": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Bb6": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "fingers": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "barres": [
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "Bb9": {
+    "baseChord": "Bb",
+    "chordDiagram": {
+      "frets": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "fingers": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    "agreement": false
+  },
+  "B": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "fingers": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "barres": [
+        2
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "Bm": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "fingers": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        2
+      ],
+      "capo": true
+    },
+    "agreement": true
+  },
+  "B7": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "fingers": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Bm7": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "fingers": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "barres": [
+        2
+      ]
+    },
+    "agreement": true
+  },
+  "Bsus2": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        4,
+        1,
+        2,
+        2
+      ],
+      "fingers": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Bmaj7": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "fingers": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    "agreement": false
+  },
+  "Bdim": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        4,
+        2,
+        1,
+        2
+      ],
+      "fingers": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "Baug": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "fingers": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    "agreement": true
+  },
+  "B6": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "fingers": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    "agreement": true
+  },
+  "B9": {
+    "baseChord": "B",
+    "chordDiagram": {
+      "frets": [
+        2,
+        1,
+        3,
+        2
+      ],
+      "fingers": [
+        2,
+        1,
+        4,
+        3
+      ],
+      "baseFret": 3
+    },
+    "agreement": true
+  }
+}
