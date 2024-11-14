@@ -9,15 +9,15 @@ Built using React, Material UI, and Vite.
 
 <div align="center">
   <picture>
-    <img src="https://repository-images.githubusercontent.com/587123622/36e45161-831e-44de-9285-25b970da4653" width="830px">
+    <img src="https://repository-images.githubusercontent.com/587123622/2ee1fdc8-92f1-4dca-b5ac-83ad5dbedd76" width="830px">
   </picture>
 </div>
 
 ## Usage
 
-- [Chords Page](https://www.johnprovazek.com/ukechords#/chords) : Displays a list of all the ukelele chords you will learn. You can use this page to track your progress.
-- [Memorize Page](https://www.johnprovazek.com/ukechords#/memorize) : Test how well you have your chords memorized using flashcards.
-- [Play Page](https://www.johnprovazek.com/ukechords#/play) : Practice playing different chords together.
+- [Chords Page](https://www.johnprovazek.com/ukechords/#/chords) : Displays a list of all the ukelele chords you will learn. You can use this page to track your progress.
+- [Memorize Page](https://www.johnprovazek.com/ukechords/#/memorize) : Test how well you have your chords memorized using flashcards.
+- [Play Page](https://www.johnprovazek.com/ukechords/#/play) : Practice playing different chords together.
 
 ## Credits
 

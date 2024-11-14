@@ -25,7 +25,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Box>
+      <Box mb={2}>
         <Typography align={extraLargeScreen ? "left" : "center"} color="default.black" variant="h4" mt={2}>
           Welcome to <strong>UKECHORDS</strong>,
         </Typography>

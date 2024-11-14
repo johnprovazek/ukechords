@@ -3,11 +3,11 @@ html {
   -webkit-user-select: none;
   -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  /* overflow: -moz-scrollbars-vertical;
-  overflow-y: scroll; */
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 }
 
 body {
   margin: 0;
-  background-color: #faf9f6;
+  background-color: #f1f3f4;
 }
