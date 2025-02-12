@@ -80,7 +80,7 @@ function MemorizeGrid({
         mx="auto"
         sx={{
           display: {
-            xs: "block",
+            xs: "flex",
             sm: "none",
           },
           width: "100%",
