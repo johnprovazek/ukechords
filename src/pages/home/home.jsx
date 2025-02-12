@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import PageItem from "../../components/pageItem/pageItem";
 
 const pageStack = [
@@ -21,20 +20,38 @@ const pageStack = [
 ];
 
 const HomePage = () => {
-  const extraLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("xl"));
-
   return (
     <>
       <Box mb={2}>
-        <Typography align={extraLargeScreen ? "left" : "center"} color="default.black" variant="h4" mt={2}>
+        <Typography
+          color="default.black"
+          variant="h4"
+          mt={2}
+          sx={{
+            textAlign: {
+              xs: "center",
+              xl: "left",
+            },
+          }}
+        >
           Welcome to <strong>UKECHORDS</strong>,
         </Typography>
-        <Typography align={extraLargeScreen ? "left" : "center"} color="default.black" variant="subtitle1" mt={2}>
+        <Typography
+          color="default.black"
+          variant="subtitle1"
+          mt={2}
+          sx={{
+            textAlign: {
+              xs: "center",
+              xl: "left",
+            },
+          }}
+        >
           A website designed to help you learn ukelele chords.
         </Typography>
         <Stack spacing={2} mt={2}>
           {pageStack.map((item, index) => (
-            <PageItem key={index} page={item.page} description={item.description} index={index} />
+            <PageItem key={index} index={index} page={item.page} description={item.description} />
           ))}
         </Stack>
       </Box>

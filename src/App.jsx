@@ -6,9 +6,9 @@ import PlayPage from "./pages/play/play.jsx";
 import MemorizePage from "./pages/memorize/memorize.jsx";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { setAllChords } from "./hooks/useLocalStorageChords";
+import { setAllChordRatings } from "./lib/utils.js";
 
-setAllChords();
+setAllChordRatings();
 
 let portfolio = createTheme({
   palette: {

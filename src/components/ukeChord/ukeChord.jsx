@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import StarIcon from "@mui/icons-material/Star";
 import Chord from "@tombatossals/react-chords/lib/Chord";
-import useLocalStorageChords from "../../hooks/useLocalStorageChords";
+import { useLocalStorage } from "@uidotdev/usehooks";
 import chordDiagram from "../../assets/data/chordsDiagram.json";
 
 const instrument = {
@@ -20,7 +20,7 @@ const instrument = {
 };
 
 const UkeChord = ({ chord, hidden = false, highlight = false, blink = false, memorizeStyle = "Diagram" }) => {
-  const [chordData, setChordData] = useLocalStorageChords(chord);
+  const [chordRating, setChordRating] = useLocalStorage(chord, 0);
   const [blinkCount, setBlinkCount] = useState(0);
 
   useEffect(() => {
@@ -81,15 +81,15 @@ const UkeChord = ({ chord, hidden = false, highlight = false, blink = false, mem
             }}
           >
             <Rating
-              value={chordData}
+              value={chordRating}
               icon={<StarIcon fontSize="medium" />}
               emptyIcon={<StarBorderIcon fontSize="medium" sx={{ color: "default.black" }} />}
               sx={{
                 color: "highlight.main",
                 visibility: hidden ? "hidden" : "visible",
               }}
-              onChange={(event, newValue) => {
-                setChordData(newValue);
+              onChange={(event, newRating) => {
+                setChordRating(newRating);
               }}
             />
           </Box>

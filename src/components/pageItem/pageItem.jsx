@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import donut0 from "../../assets/images/donutBackground_0.svg";
@@ -16,14 +15,13 @@ function capitalizePageName(page) {
   return page.charAt(0).toUpperCase() + page.slice(1);
 }
 
-const PageItem = ({ page, description, index }) => {
-  const mediumScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
+const PageItem = ({ index, page, description }) => {
   const theme = useTheme();
   return (
     <>
       <Card
         sx={{
-          backgroundImage: `linear-gradient(to left, rgba(255,255,255,${mediumScreen ? 0 : 255}), white calc(110% - ${theme.breakpoints.values.md}px)), url(${donutSVGs[index % donutSVGs.length]})`,
+          backgroundImage: `linear-gradient(to left, rgba(255,255,255,0), white calc(110% - ${theme.breakpoints.values.md}px)), url(${donutSVGs[index % donutSVGs.length]})`,
           backgroundSize: "auto 100%",
         }}
       >

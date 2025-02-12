@@ -1,18 +1,18 @@
-import { useState } from "react";
 import Grid from "@mui/material/Grid2";
 import CommandBar from "../../components/commandBar/commandBar.jsx";
 import UkeChord from "../../components/ukeChord/ukeChord.jsx";
 import chordsList from "../../assets/data/chordsList.json";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
-const toggleButtons = chordsList["base"];
+const SELECTED_BASE_CHORD_KEY_NAME = "selected-base-chord";
 
 const ChordsPage = () => {
-  const [activeChord, setActiveChord] = useState("C");
+  const [activeChord, setActiveChord] = useLocalStorage(SELECTED_BASE_CHORD_KEY_NAME, "C");
 
   return (
     <>
       <CommandBar
-        toggleButtons={toggleButtons}
+        toggleButtons={chordsList["base"]}
         activeToggleButton={activeChord}
         onToggleButton={(key) => setActiveChord(key)}
       />
